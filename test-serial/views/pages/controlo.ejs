@@ -1,0 +1,56 @@
+<%- include('../partials/header') %>
+<script src="js/control/functions.js"></script>
+<h1>Oscilloscope</h1>
+    <div class="oscilloscope">
+        <img src="images/oscilloscope.png" alt="oscilloscope" id="oscilloscope" usemap ="#oscilloscopeMap">
+        <%- include('../imagemap/oscilloscopeMap') %>
+        <div class="interface">
+            <img src="images/oscilloscope-interface-template.png" alt="oscilloscope-interface" id="oscilloscope-interface">
+            <p id="ch1-voltageScale"></p>
+            <p id="ch2-voltageScale"></p>
+            <p id="time-horizontalScale"></p>
+            <div class="titles">
+                <p id="menu-title"></p>
+                <p id="menu-textTitle1"></p>
+                <p id="menu-textTitle2"></p>
+                <p id="menu-textTitle3"></p>
+                <p id="menu-textTitle4"></p>
+                <p id="menu-textTitle5"></p>
+            </div>
+            <div class="texts">
+                <p id="menu-text1"></p>
+                <p id="menu-text2"></p>
+                <p id="menu-text3"></p>
+                <p id="menu-text4"></p>
+                <p id="menu-text5"></p>
+            </div>
+            <div class="solos">
+                <p id="menu-soloText1"></p>
+                <p id="menu-soloText2"></p>
+                <p id="menu-soloText3"></p>
+                <p id="menu-soloText4"></p>
+                <p id="menu-soloText5"></p>
+            </div>
+            <div class="values">
+                <p id="menu-valueText11"></p>
+                <p id="menu-valueText12"></p>
+                <p id="menu-valueText21"></p>
+                <p id="menu-valueText22"></p>
+                <p id="menu-valueText31"></p>
+                <p id="menu-valueText32"></p>
+                <p id="menu-valueText41"></p>
+                <p id="menu-valueText42"></p>
+                <p id="menu-valueText43"></p>
+                <p id="menu-valueText44"></p>
+                <p id="menu-valueText51"></p>
+                <p id="menu-valueText52"></p>
+                <p id="menu-valueText53"></p>
+            </div>
+            <img src="images/background-image.png" alt="background-image" id="background-image">
+            <div class="charts">
+                <canvas id="myChart1"></canvas>
+                <canvas id="myChart2"></canvas>
+            </div>
+        </div>
+    </div>
+<%- include('../partials/footer') %>

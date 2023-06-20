@@ -1,0 +1,1 @@
+// Colocar aqui os eventos que estão neste momento no functions.js

@@ -1,0 +1,407 @@
+body{
+    color: #000;
+    background-color: rgb(34, 105, 168);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+#pageTitle{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(34, 105, 168);
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+    z-index: 999;
+}
+.navbar{
+    background: rgb(29,155,160);
+    background: linear-gradient(0deg, rgba(29,155,160,1) 0%, rgba(20,123,125,1) 0%, rgba(7,2,18,1) 100%);
+    color: #fff;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    z-index: 999;
+}
+#oscilloscope{
+    border: 1px solid #000;
+    box-shadow: 0px 0px 20px #a1a1a1;
+}
+.oscilloscope{
+    position: relative;
+    margin: 20px auto;
+    width: 1260px;
+    height: 530px;
+}
+#power-light{
+    position: absolute;
+    top: 65.5px;
+    left: 680px;
+    z-index: 999;
+    opacity: 0;
+}
+#ch1-button{
+    position: absolute;
+    top: 255px;
+    left: 698px;
+    z-index: 999;
+    opacity: 0;
+    cursor: pointer;
+}
+#ch2-button{
+    position: absolute;
+    top: 254px;
+    left: 854px;
+    z-index: 999;
+    opacity: 0;
+    cursor: pointer;
+}
+.interface{
+    position: absolute;
+    opacity: 0;
+    top: 50px;
+    left: 80px;
+}
+
+#background-image {
+    position: absolute;
+    top: 17px;
+    left: 16px;
+    width: 367px;
+    height: 295px;
+    z-index: 998;
+}
+
+.charts{
+    position: absolute;
+    top: 1px;
+    left: 16px;
+    width: 367px;
+    height: 295px;
+    user-select: none;
+    z-index: 998;
+}
+area {
+    cursor: pointer;
+}
+.signalGenerator{
+    position: relative;
+    margin: 20px auto;
+    opacity: 0;
+}
+#measure{
+    z-index: 999;
+    background-color: #000;
+    visibility: visible;
+    border: 1px solid #0011ff;
+}
+#myChart1{
+    position: absolute;
+    top: -24px;
+    left: 0px;
+}
+#myChart2{
+    position: absolute;
+    top: -24px;
+    left: 0px;
+}
+.titles{
+    position: absolute;
+    top: 0px;
+    left: 383px;
+    font-size: 15px;
+    color: #000;
+    font-weight: bold;
+    z-index: 999;
+    width: 0px;
+    height: 0px;
+    user-select: none;
+}
+
+#menu-title {
+    position: absolute;
+    top: -3px;
+    width: 96px;
+    height: 18px;
+    text-align: center;
+}
+#menu-textTitle1 {
+    position: absolute;
+    top: 18px;
+    width: 96px;
+    height: 18px;
+    text-align: center;
+}
+#menu-textTitle2 {
+    position: absolute;
+    top: 78px;
+    width: 96px;
+    height: 18px;
+    text-align: center;
+}
+#menu-textTitle3 {
+    position: absolute;
+    top: 137px;
+    width: 96px;
+    height: 18px;
+    text-align: center;
+}
+#menu-textTitle4 {
+    position: absolute;
+    top: 196px;
+    width: 96px;
+    height: 18px;
+    text-align: center;
+}
+#menu-textTitle5 {
+    position: absolute;
+    top: 255px;
+    width: 96px;
+    height: 18px;
+    text-align: center;
+}
+
+.texts{
+    position: absolute;
+    top: 0px;
+    left: 383px;
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+    z-index: 999;
+    width: 0px;
+    height: 0px;
+    user-select: none;
+}
+#menu-text1 {
+    position: absolute;
+    top: 50px;
+    width: 96px;
+    height: 18px;
+    text-align: center;
+}
+#menu-text2 {
+    position: absolute;
+    top: 109px;
+    width: 96px;
+    height: 18px;
+    text-align: center;
+}
+#menu-text3 {
+    position: absolute;
+    top: 168px;
+    width: 96px;
+    height: 18px;
+    text-align: center;
+}
+#menu-text4 {
+    position: absolute;
+    top: 227px;
+    width: 96px;
+    height: 18px;
+    text-align: center;
+}
+#menu-text5 {
+    position: absolute;
+    top: 286px;
+    width: 96px;
+    height: 18px;
+    text-align: center;
+}
+.solos{
+    position: absolute;
+    top: 0px;
+    left: 383px;
+    font-size: 15px;
+    color: #000;
+    font-weight: bold;
+    z-index: 999;
+    width: 0px;
+    height: 0px;
+    user-select: none;
+}
+#menu-soloText1 {
+    position: absolute;
+    top: 37px;
+    width: 96px;
+    height: 18px;
+    text-align: center;
+}
+#menu-soloText2 {
+    position: absolute;
+    top: 96px;
+    width: 96px;
+    height: 18px;
+    text-align: center;
+}
+#menu-soloText3 {
+    position: absolute;
+    top: 155px;
+    width: 96px;
+    height: 18px;
+    text-align: center;
+}
+#menu-soloText4 {
+    position: absolute;
+    top: 214px;
+    width: 96px;
+    height: 18px;
+    text-align: center;
+}
+#menu-soloText5 {
+    position: absolute;
+    top: 273px;
+    width: 96px;
+    height: 18px;
+    text-align: center;
+}
+
+.values{
+    position: absolute;
+    top: 0px;
+    left: 383px;
+    font-size: 14px;
+    color: #000;
+    z-index: 999;
+    width: 0px;
+    height: 0px;
+    user-select: none;
+}
+#menu-valueText11 {
+    position: absolute;
+    top: 44px;
+    width: 96px;
+    height: 36px;
+    text-align: left;
+}
+#menu-valueText12 {
+    position: absolute;
+    top: 58px;
+    width: 96px;
+    height: 36px;
+    text-align: left;
+}
+#menu-valueText21 {
+    position: absolute;
+    top: 103px;
+    width: 96px;
+    height: 36px;
+    text-align: left;
+}
+#menu-valueText22 {
+    position: absolute;
+    top: 117px;
+    width: 96px;
+    height: 36px;
+    text-align: left;
+}
+#menu-valueText31 {
+    position: absolute;
+    top: 162px;
+    width: 96px;
+    height: 36px;
+    text-align: left;
+}
+#menu-valueText32 {
+    position: absolute;
+    top: 176px;
+    width: 96px;
+    height: 36px;
+    text-align: left;
+}
+#menu-valueText41 {
+    position: absolute;
+    top: 193px;
+    width: 96px;
+    height: 36px;
+    text-align: left;
+}
+#menu-valueText42 {
+    position: absolute;
+    top: 207px;
+    width: 96px;
+    height: 36px;
+    text-align: left;
+}
+#menu-valueText43 {
+    position: absolute;
+    top: 221px;
+    width: 96px;
+    height: 36px;
+    text-align: left;
+}
+#menu-valueText44 {
+    position: absolute;
+    top: 235px;
+    width: 96px;
+    height: 36px;
+    text-align: left;
+}
+#menu-valueText51 {
+    position: absolute;
+    top: 266px;
+    width: 96px;
+    height: 36px;
+    text-align: left;
+}
+#menu-valueText52 {
+    position: absolute;
+    top: 280px;
+    width: 96px;
+    height: 36px;
+    text-align: left;
+}
+#menu-valueText53 {
+    position: absolute;
+    top: 294px;
+    width: 96px;
+    height: 36px;
+    text-align: left;
+}
+
+#ch1-voltageScale {
+    position: absolute;
+    top: 327px;
+    left: 45px;
+    color: rgb(255, 255, 60);
+    z-index: 999;
+    font-size: 13.5px;
+    width: 0px;
+    height: 0px;
+    user-select: none;
+}
+
+#ch2-voltageScale {
+    position: absolute;
+    top: 327px;
+    left: 160px;
+    color: rgb(24, 102, 248);
+    z-index: 999;
+    font-size: 13.5px;    
+    width: 0px;
+    height: 0px;
+    user-select: none;
+}
+
+#time-horizontalScale {
+    position: absolute;
+    top: 311px;
+    left: 160px;
+    color: rgb(59, 225, 246);
+    z-index: 999;
+    font-size: 13.5px;    
+    width: 0px;
+    height: 0px;
+    user-select: none;
+}
+
+
+
+

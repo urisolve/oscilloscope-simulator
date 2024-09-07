@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
-const routes = require('./controller/routes.js');
+const routes = require('./routes/routes.js');
 app.use('/', routes);
 
 app.set('views', path.join(__dirname, '../frontend/views'));

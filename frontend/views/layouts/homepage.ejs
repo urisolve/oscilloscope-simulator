@@ -1,4 +1,4 @@
-<%- include('partials/header') %>
+<%- include('../partials/header') %>
 <div class="navbar">
     <h1 id="pageTitle">Oscilloscope Interface</h1>
     <a href="/support" id="support">Support</a>
@@ -10,7 +10,7 @@
     <div class="oscilloscope">
         <!-- <div class="background-center"></div> -->
         <img src="images/oscilloscope.png" draggable="false" alt="oscilloscope" id="oscilloscope" usemap ="#oscilloscopeMap">
-        <%- include('imagemap/oscilloscopeMap') %>
+        <%- include('../imagemap/oscilloscopeMap') %>
         <img src="images/ch1-button.png" draggable="false" alt="ch1-button" id="ch1-button">
         <img src="images/ch2-button.png" draggable="false" alt="ch2-button" id="ch2-button">
         <img src="images/power-light.png" draggable="false" alt="power-light" id="power-light">
@@ -37,7 +37,7 @@
             <p id="trigger-source"></p>
             <p id="trigger-type"></p>
             <img src="images/trigger-slope.png" draggable="false" alt="trigger-slope" id="trigger-slope">
-            <%- include('partials/texts') %>
+            <%- include('../partials/texts') %>
             <div class="waveforms">
                 <img src="images/background-image.png" draggable="false" alt="background-image" id="background-image">
                 <p id="alertMessage"></p>
@@ -52,14 +52,14 @@
                 </div>
             </div>
         </div>
-        <%- include('offcanvas/mode-offcanvas') %>
-        <%- include('offcanvas/input-offcanvas') %>
-        <%- include('offcanvas/signal-generator-CH1') %>
-        <%- include('offcanvas/signal-generator-CH2') %>
-        <%- include('offcanvas/hardcopy-offcanvas') %>
-        <%- include('offcanvas/measureAll') %>
-        <%- include('offcanvas/verticalscalech1-offcanvas') %>
+        <%- include('../offcanvas/mode-offcanvas') %>
+        <%- include('../offcanvas/input-offcanvas') %>
+        <%- include('../offcanvas/signal-generator-CH1') %>
+        <%- include('../offcanvas/signal-generator-CH2') %>
+        <%- include('../offcanvas/hardcopy-offcanvas') %>
+        <%- include('../offcanvas/measureAll') %>
+        <%- include('../offcanvas/verticalscalech1-offcanvas') %>
         <input type="file" id="csvFileInput" style="display: none;">
     </div>
       
-<%- include('partials/footer') %>
+<%- include('../partials/footer') %>

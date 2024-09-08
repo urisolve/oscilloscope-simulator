@@ -5,10 +5,7 @@ const router = express.Router();
 router.post("/acquire/average", function (req, res) {
   // Acquire Average
   let value = req.body.data;
-  let command = oscilloscope.writeCommand(
-    oscilloscope.commands.acqCommands[0],
-    value
-  );
+  let command = oscilloscope.writeCommand(oscilloscope.commands.acqCommands[0], value);
   oscilloscope.writeToPort(command, port);
   object = {
     status: 200,
@@ -20,10 +17,7 @@ router.post("/acquire/average", function (req, res) {
 router.post("/acquire/length", function (req, res) {
   // Acquire Length
   let value = req.body.data;
-  let command = oscilloscope.writeCommand(
-    oscilloscope.commands.acqCommands[1],
-    value
-  );
+  let command = oscilloscope.writeCommand(oscilloscope.commands.acqCommands[1], value);
   oscilloscope.writeToPort(command, port);
   object = {
     status: 200,
@@ -35,14 +29,11 @@ router.post("/acquire/length", function (req, res) {
 router.post("/acquire/mode", function (req, res) {
   // Acquire Mode
   let value = req.body.data;
-  let command = oscilloscope.writeCommand(
-    oscilloscope.commands.acqCommands[2],
-    value
-  );
+  let command = oscilloscope.writeCommand(oscilloscope.commands.acqCommands[2], value);
   oscilloscope.writeToPort(command, port);
   object = {
     status: 200,
-    data: value,
+    data: value, // TODO: Check if this is necessary.
   };
   const stringJSON = JSON.stringify(object);
   res.setHeader("Content-Type", "application/json");

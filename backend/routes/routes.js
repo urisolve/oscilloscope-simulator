@@ -1,16 +1,16 @@
 const express = require("express");
 const router = express.Router();
 
-const pagesRoutes = require("./routes-layouts.js");
+const layoutsRoutes = require("./routes-layouts.js");
 const realOscilloscopeRoutes = require("./routes-real_oscilloscope.js");
 
-router.use(pagesRoutes);
+router.use(layoutsRoutes);
 router.use(realOscilloscopeRoutes);
 
 const bodyParser = require("body-parser");
 router.use(bodyParser.urlencoded({ extended: false }));
 router.use(bodyParser.json());
-const Oscilloscope = require("../utils/real-oscilloscope-commands.js");
+const Oscilloscope = require("../utils/real_oscilloscope-commands.js");
 const oscilloscope = new Oscilloscope();
 const { SerialPort } = require("serialport");
 const { ReadlineParser } = require("@serialport/parser-readline");
